@@ -3,13 +3,22 @@
 # Use the Parameter Testing feature in the box below to test your code with different arguments.
 
 
-def FirstFactorial(num):
-    if num == 0:
-        return 1
-    else:
-        return FirstFactorial(num - 1) * num
+# def FirstFactorial(num):
+#     if num == 0:
+#         return 1
+#     else:
+#         return FirstFactorial(num - 1) * num
 
 
-# keep this function call here
-# to see how to enter arguments in Python scroll down
-print FirstFactorial(int(raw_input()))
+# # keep this function call here
+# # to see how to enter arguments in Python scroll down
+# print FirstFactorial(int(raw_input()))
+
+
+def firstfactorial(num):
+	if num == 0:
+		return 1
+	else :
+		return firstfactorial(num -1 ) * num
+
+print firstfactorial(int(raw_input()))

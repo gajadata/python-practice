@@ -3,12 +3,22 @@
 
 # Use the Parameter Testing feature in the box below to test your code with different arguments.
 
-def SimpleAdding(num):
-    total = 0
-    for each_num in xrange(num + 1):
-        total += each_num
-    return total
+# def SimpleAdding(num):
+#     total = 0
+#     for each_num in xrange(num + 1):
+#         total += each_num
+#     return total
 
-# keep this function call here
-# to see how to enter arguments in Python scroll down
+# # keep this function call here
+# # to see how to enter arguments in Python scroll down
+# print SimpleAdding(int(raw_input()))
+
+
+def SimpleAdding(num):
+	total = 0 
+	for each_num in xrange(num + 1):
+		total += each_num
+	return total
+
+
 print SimpleAdding(int(raw_input()))

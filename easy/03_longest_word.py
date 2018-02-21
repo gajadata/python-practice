@@ -3,19 +3,35 @@
 # Ignore punctuation and assume sen will not be empty.
 
 
-def LongestWord(sentence):
-    longest_word = ''
-    for char in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~":
-        no_punct_sentence = sentence.replace(char, " ")
-    split_sentence = no_punct_sentence.split()
+# def LongestWord(sentence):
+#     longest_word = ''
+#     for char in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~":
+#         no_punct_sentence = sentence.replace(char, " ")
+#     split_sentence = no_punct_sentence.split()
 
-    for word in split_sentence:
-        if len(word) > len(longest_word):
-            longest_word = word
-    return longest_word
+#     for word in split_sentence:
+#         if len(word) > len(longest_word):
+#             longest_word = word
+#     return longest_word
 
 
 
 # keep this function call here
 # to see how to enter arguments in Python scroll down
-print LongestWord(raw_input())
+# print LongestWord(raw_input())
+
+
+def Longestword(sentence):
+	longest_word = ''
+	for char in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~":
+		no_punct_sentence = sentence.replace(char," ")
+	split_sentence = no_punct_sentence.split()
+
+	for word in split_sentence:
+		if len(word)> len(longest_word):
+			longest_word = word
+	return longest_word
+
+
+print Longestword(raw_input())
+

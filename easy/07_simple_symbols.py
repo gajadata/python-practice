@@ -1,3 +1,5 @@
+
+#Skip this Question
 # Have the function SimpleSymbols(str) take the str parameter being passed and determine if it is an acceptable sequence
 #  by either returning the string true or false. The str parameter will be composed of + and = symbols with several
 # letters between them (ie. ++d+===+c++==a) and for the string to be true each letter must be surrounded by a + symbol.
@@ -17,5 +19,23 @@ def SimpleSymbols(str):
 
 
 # keep this function call here
+# to see how to enter arguments in Python scroll down
+print SimpleSymbols(raw_input())
+
+
+
+def SimpleSymbols(str): 
+  sz = len(str)
+  sl = list(str)
+  for i, c in enumerate(sl):
+    if c.isalpha():
+      if ((i<1) or (i+1 > sz-1)):
+        return "false"
+      if (sl[i-1] != '+') or (sl[i+1] != '+'):
+        return "false"
+  return "true"
+   
+    
+# keep this function call here  
 # to see how to enter arguments in Python scroll down
 print SimpleSymbols(raw_input())

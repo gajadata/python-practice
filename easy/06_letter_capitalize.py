@@ -3,11 +3,21 @@
 # word. Words will be separated by only one space.
 
 
+# def LetterCapitalize(a_string):
+#     capitalized = a_string.title()
+#     return capitalized
+
+
+# # keep this function call here
+# # to see how to enter arguments in Python scroll down
+# print LetterCapitalize(raw_input())
+
+
 def LetterCapitalize(a_string):
-    capitalized = a_string.title()
-    return capitalized
+	capitalized = a_string.title()
+	return capitalized
 
 
-# keep this function call here
-# to see how to enter arguments in Python scroll down
 print LetterCapitalize(raw_input())
+
+
