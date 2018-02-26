@@ -28,3 +28,6 @@ def LetterCountI(a_str):
     if max_count_repeats > 1:
         return word_with_most
     return -1
+
+
+    
