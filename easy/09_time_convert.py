@@ -4,7 +4,7 @@
 
 def TimeConvert(num):
 	hour = num /60
-	second = num % 60
+	min = num % 60
 	print (str(hour) + ':' + str(second))
 
 
